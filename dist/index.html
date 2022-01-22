@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New Project</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.is-load ._preload-body:before {
+			display: none;
+		}
+		
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+
+<body>
+	<div class="_preload-body"></div>
+	<!-- == TOP LINE ================== -->
+	<header class="header">
+    <div class="header__body container">
+        <div class="header__logo">
+            <a href="#">
+                <img class="img-svg" src="img/logo/logo.svg" alt="logo">
+            </a>
+        </div>
+        <div class="language">
+            <div class="language__title">Рус</div>
+            <ul class="language__list">
+                <li>
+                    <a href="">Укр</a>
+                </li>
+            </ul>
+        </div>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li>
+                    <a href="#" class="menu__link">Компания</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#" class="menu__link current-menu-item">Услуги</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item-has-children">
+                            <a class="sub-menu__title-link" href="#">Технадзор</a>
+                            <ul class="sub-sub-menu">
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Технадзор строительства
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Технадзор за строительством дома
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Технадзор за ремонтом
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Строительный контроль
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Инженер технадзора
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Технический надзор за зданиями и сооружениями
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Технический надзор строительно-монтажных работ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Технадзор за строительством
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a class="sub-menu__title-link" href="#">Служба Заказчика </a>
+                            <ul class="sub-sub-menu">
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Служба Заказчика 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Технический заказчик
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Сопровождение строительства
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Консультации по строительству  
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Оптимизация строительства
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Управление строительством 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Служба заказчика в строительстве
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a class="sub-menu__title-link" href="#">Аудит в строительстве</a>
+                            <ul class="sub-sub-menu">
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Строительный аудит
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Проверка качества работ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Проверка дома перед покупкой
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Проверка квартиры перед покупкой 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Проверка смет
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Оценка строительных работ 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Составление смет
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a class="sub-menu__title-link" href="#">Строительная экспертиза</a>
+                            <ul class="sub-sub-menu">
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Строительная экспертиза
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Экспертиза строительных работ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Строительная экспертиза домов
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Строительная экспертиза квартиры
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Экспертиза качества ремонта
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Строительная экспертиза зданий и конструкций
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Строительная экспертиза кровли
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Экспертиза фундамента
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Экспертиза монтажных работ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Экспертиза сметной стоимости
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Экспертиза проекта строительства
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Экспертиза промышленных объектов
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Независимая экспертиза
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Экспертиза строительных материалов
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a class="sub-menu__title-link" href="#">Контроль качества работ </a>
+                            <ul class="sub-sub-menu">
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Контроль качества работ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Контроль качества строительства
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Контроль качества ремонта
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Контроль качества монтажных работ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Контроль качества отделочных работ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Контроль качества арматурных работ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Контроль качества свайных работ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Контроль качества бетонных работ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Контроль качества сварочных работ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Контроль качества электромонтажных работ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Контроль качества штукатурных работ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Входной контроль материалов
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a class="sub-menu__title-link" href="#">Техническое обследование объектов</a>
+                            <ul class="sub-sub-menu">
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Техническое обследование объектов
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Обследование зданий и сооружений
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Обследование домов
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Обследование квартиры
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Обследование кровли
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Обследование стен
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Обследование перекрытий
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Обследование фундаментов
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Обследование несущих конструкций
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Обследование железобетонных конструкций
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="sub-menu__title-link" href="#">Энерго и теплоаудит</a>
+                            <a class="sub-menu__title-link" href="#">Авторский надзор</a>
+                            <a class="sub-menu__title-link" href="#">Комплексное обследование</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a class="sub-menu__title-link" href="#">Тепловизионное обследование</a>
+                            <ul class="sub-sub-menu">
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Тепловизионное обследование
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Тепловизионное обследование зданий и сооружений
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Тепловизионное обследование дома
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Тепловизионное обследование квартиры
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Тепловизионное обследование предприятий
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Услуги тепловизионного обследования
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a class="sub-menu__title-link" href="#">Техническая экспертиза </a>
+                            <ul class="sub-sub-menu">
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Техническая экспертиза  
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Техническая экспертиза зданий и сооружений
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Техническая экспертиза домов
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Техническая экспертиза квартир  
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Техническая экспертиза недвижимости
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-menu__link">
+                                        Техническая экспертиза строительных объектов 
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="tel:+380676193918" class="header__phone">
+            <img class="img-svg desk" src="img/icons/phone.svg" alt="">
+            <img class="img-svg mob" src="img/icons/phone-blue.svg" alt="">
+            +38(067)619 39 18
+        </a>
+        <div class="header__burger">
+            <div class="burger-wrap">
+                <svg width="34" height="19" viewBox="0 0 34 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="line-1" width="33" height="4" fill="white"/>
+                    <rect class="line-2" width="32.6912" height="4.01164" transform="matrix(0.987222 0.159353 -0.189139 0.98195 0.758789 5.41797)" fill="white"/>
+                    <rect class="line-3" y="15" width="31" height="4" fill="white"/>
+                    </svg>
+            </div>
+            <div class="burger-close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L10 10M10 10L19 19M10 10L19 1L1 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+            </div>
+        </div> 
+
+    </div>
+</header>
+
+	<!-- == // TOP LINE ================== -->
+
+
+	<main class="_page home-page">
+
+		<section class="promo-header">
+			<div class="container">
+				<div class="promo-header__body">
+					<div class="promo-header__col-1">
+						<div class="promo-header__slider-text swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="promo-header__slider-item">
+										<h1 class="promo-header__title">
+											Повысьте стандарты Вашего строительства
+										</h1>
+										<p class="promo-header__subtitle">Технический надзор строительных работ </p>
+
+										<a href="#" class="btn">Узнать больше</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="promo-header__slider-item">
+										<h1 class="promo-header__title">
+											Освободитесь
+											от строительной рутины
+										</h1>
+										<p class="promo-header__subtitle">Сопровождение строительства </p>
+
+										<a href="#" class="btn">Узнать больше</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="promo-header__slider-item">
+										<h1 class="promo-header__title">
+											Уменьшите стоимость Вашего объекта
+										</h1>
+										<p class="promo-header__subtitle">Строительный аудит </p>
+
+										<a href="#" class="btn">Узнать больше</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="promo-header__partners" data-da="promo-header__mobile-bottom-box,0,767.98">
+							<p>Нам доверяют</p>
+							<ul>
+								<li>
+									<img src="img/photo/logo-partners-1.png" alt="">
+								</li>
+								<li>
+									<img src="img/photo/logo-partners-2.png" alt="">
+								</li>
+								<li>
+									<img src="img/photo/logo-partners-3.png" alt="">
+								</li>
+								<li>
+									<img src="img/photo/logo-partners-4.png" alt="">
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="promo-header__col-2">
+						<div class="promo-header__bg ibg">
+							<div class="promo-header__bg-slider swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="promo-header__slider-item">
+											<img src="img/photo/promo-bg-1.jpg" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="promo-header__slider-item">
+											<img src="img/photo/promo-bg-2.jpg" alt="">
+										</div>
+
+									</div>
+									<div class="swiper-slide">
+										<div class="promo-header__slider-item">
+										</div>
+										<img src="img/photo/promo-bg-3.jpg" alt="">
+									</div>
+								</div>
+								
+							
+							</div>
+							<div class="swiper-pagination" data-da="promo-header__body,last,767.98"></div>
+							<div class="promo-header__bg-logo">
+								<img src="img/logo/logo-white.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="promo-header__mobile-bottom-box"></div>
+			</div>
+		</section>
+
+		<section class="text-block padding-wrap pt-0">
+			<div class="text-block__top">
+				<div class="container">
+					<div class="text-block__body">
+						<div class="text-block__col-1">
+							<div class="text-block__img ibg">
+								<picture>
+									<source srcset="img/photo/services.jpg" media="(min-width: 768px)">
+									<img src="img/photo/services-mob.jpg" alt="img">
+								</picture>
+							</div>
+						</div>
+						<div class="text-block__col-2">
+							<h2 class="text-block__title">Наши сервисы</h2>
+							<div class="text-block__text">
+								<p>
+									Предлагаем Вам решения, которые обеспечат надлежащее качество работ и помогут
+									сократить стоимость и сроки строительства. Формат – от разовой работы на объекте до
+									комплексного регулярного обслуживания Заказчика.
+								</p>
+								<p>
+									Каждое решение включает набор инструментов, которые Вы можете гибко подобрать для
+									Вашего объекта. Выберите услугу и узнайте о ней больше.
+								</p>
+							</div>
+
+							<a href="#" class="btn">Получить консультацию</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-block__bottom">
+				<div class="container">
+					<ul class="list">
+						<li>
+							<h2>01</h2>
+							<p>Управление строительными проектами</p>
+						</li>
+						<li>
+							<h2>04</h2>
+							<p>Технический надзор ремонта офиса, магазина, квартиры</p>
+						</li>
+						<li>
+							<h2>02</h2>
+							<p>Технический надзор строительства и реконструкции</p>
+						</li>
+						<li>
+							<h2>05</h2>
+							<p>Строительный финансовый аудит и проверка качества работ</p>
+						</li>
+						<li>
+							<h2>03</h2>
+							<p>Технический надзор частного дома</p>
+						</li>
+						<li>
+							<h2>06</h2>
+							<p>Оптимизация строительства</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages padding-wrap">
+			<div class="container">
+				<div class="advantages__body">
+					<div class="advantages__col">
+						<h2 class="advantages__title">
+							Когда к нам <br> обращаются Заказчики
+						</h2>
+
+						<div class="advantages-card">
+							<h2 class="advantages-card__title">Без Вехи</h2>
+							<div class="advantages-card__img ibg">
+								<img src="img/photo/advantages-img-1.jpg" alt="">
+							</div>
+							<div class="advantages-card__text text-content">
+								<ul>
+									<li>
+										Низкое качество работ
+									</li>
+									<li>
+										Махинации в сметах
+									</li>
+									<li>
+										Суммы актов превышают бюджет
+									</li>
+									<li>
+										Хаос в отчетности, документации
+									</li>
+									<li>
+										Срывы сроков
+									</li>
+									<li>
+										Не с кем посоветоваться
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="advantages__col">
+						<p class="advantages__text">и какой результат получают</p>
+						<div class="advantages-card">
+							<h2 class="advantages-card__title">С Вехой</h2>
+							<div class="advantages-card__img ibg">
+								<img src="img/photo/advantages-img-2.jpg" alt="">
+							</div>
+							<div class="advantages-card__text text-content">
+								<ul>
+									<li>
+										Работы выполнены качественно
+									</li>
+									<li>
+										Сметы, акты проверены и оптимизированы
+									</li>
+									<li>
+										Затраты на строительство уменьшены
+									</li>
+									<li>
+										Выстроена прозрачная схема работы
+									</li>
+									<li>
+										Объект сдан в срок
+									</li>
+									<li>
+										На стройке надежный консультант
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="padding-wrap">
+			<section class="objects">
+				<div class="container">
+					<div class="objects__body">
+						<div class="objects__col-1">
+							<h2 class="objects__title">Объекты</h2>
+
+							<div class="pagination"></div>
+
+							<div class="slider-buttons">
+								<div class="slider-button prev">
+									<img src="img/icons/slider-arrow-left.svg" alt="">
+								</div>
+								<div class="slider-button next">
+									<img src="img/icons/slider-arrow-right.svg" alt="">
+								</div>
+							</div>
+
+							<div class="objects__slider-mob-wrap"></div>
+							<a href="" class="btn">Получить консультацию</a>
+							<div class="objects__bottom">
+								<p>или позвоните</p>
+								<a href="#" class="phone">
+									<img src="img/icons/phone-dark.svg" alt="">
+									+38(067)619 39 18
+								</a>
+							</div>
+						</div>
+						<div class="objects__col-2">
+							<div class="objects__slider swiper-container" data-da="objects__slider-mob-wrap,0,767,98">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="objects__slider-item">
+											<div class="objects__slider-img ibg">
+												<img src="img/photo/slider-img-1.jpg" alt="">
+											</div>
+											<div class="objects__slider-text">
+												<p>
+													Гостиница Amarant Urban, г.Киев
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="objects__slider-item">
+											<div class="objects__slider-img ibg">
+												<img src="img/photo/slider-img-2.jpg" alt="">
+											</div>
+											<div class="objects__slider-text">
+												<p>
+													Учебный центр, <br>
+													г.Козин
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="objects__slider-item">
+											<div class="objects__slider-img ibg">
+												<img src="img/photo/slider-img-3.jpg" alt="">
+											</div>
+											<div class="objects__slider-text">
+												<p>
+													Художественный музей
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<section class="list-block padding-wrap">
+			<div class="container">
+				<h2 class="list-block__title center">Почему Заказчики пользуются нашими услугами</h2>
+				<ul class="list-block__list">
+					<li>
+						<div class="list-block__icon">
+							<img src="img/icons/list-icon-1.svg" alt="">
+						</div>
+						<h3 class="list-block__title-item">Результаты</h3>
+						<div class="list-block__text-item text-content">
+							Реальные результаты работы – уменьшение затрат, отсутствие дефектов
+						</div>
+					</li>
+					<li>
+						<div class="list-block__icon">
+							<img src="img/icons/list-icon-2.svg" alt="">
+						</div>
+						<h3 class="list-block__title-item">Без предоплаты</h3>
+						<div class="list-block__text-item text-content">
+							Отсутствие предоплаты и прозрачное ценообразование
+						</div>
+					</li>
+
+					<li>
+						<div class="list-block__icon">
+							<img src="img/icons/list-icon-3.svg" alt="">
+						</div>
+						<h3 class="list-block__title-item">Наличие документов</h3>
+						<div class="list-block__text-item text-content">
+							Работа по договору и безналичному расчету с полным пакетом документов
+						</div>
+					</li>
+					<li>
+						<div class="list-block__icon">
+							<img src="img/icons/list-icon-4.svg" alt="">
+						</div>
+						<h3 class="list-block__title-item">Опыт</h3>
+						<div class="list-block__text-item text-content">
+							Сформированный штат инженеров с опытом 10+ лет
+						</div>
+					</li>
+					<li>
+						<div class="list-block__icon">
+							<img src="img/icons/list-icon-5.svg" alt="">
+						</div>
+						<h3 class="list-block__title-item">Сеть офисов</h3>
+						<div class="list-block__text-item text-content">
+							Работаем в крупных городах Украины, а также на отдаленных объектах
+						</div>
+					</li>
+					<li>
+						<div class="list-block__icon">
+							<img src="img/icons/list-icon-6.svg" alt="">
+						</div>
+						<h3 class="list-block__title-item">Отчетность</h3>
+						<div class="list-block__text-item text-content">
+							Регулярная отчетность перед Заказчиком о ходе работы
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<div class="padding-wrap">
+			<section class="testimonials">
+				<div class="testimonials__bg ibg">
+					<picture>
+						<source srcset="img/photo/testimonials-bg.png" media="(min-width: 768px)">
+						<img src="img/photo/testimonials-bg-mob.png" alt="img">
+					</picture>
+				</div>
+				<div class="container">
+					<div class="testimonials__body">
+						<div class="testimonials__col-1">
+							<h2 class="testimonials__title">Нас рекомендуют</h2>
+
+							<div class="pagination"></div>
+
+							<div class="slider-buttons">
+								<div class="slider-button prev">
+									<img src="img/icons/slider-arrow-left.svg" alt="">
+								</div>
+								<div class="slider-button next">
+									<img src="img/icons/slider-arrow-right.svg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="testimonials__col-2">
+							<div class="testimonials__slider swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a data-fancybox class="testimonials__slider-item ibg"
+											href="img/photo/testimonial-preview-1-big.jpg">
+											<img src="img/photo/testimonial-preview-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox class="testimonials__slider-item ibg"
+											href="img/photo/testimonial-preview-2-big.jpg">
+											<img src="img/photo/testimonial-preview-2.jpg" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox class="testimonials__slider-item ibg"
+											href="img/photo/testimonial-preview-1-big.jpg">
+											<img src="img/photo/testimonial-preview-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a data-fancybox class="testimonials__slider-item ibg"
+											href="img/photo/testimonial-preview-2-big.jpg">
+											<img src="img/photo/testimonial-preview-2.jpg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+
+
+	<!-- == FOOTER ================== -->
+	<footer class="footer">
+    <div class="footer__bg ibg">
+        <img src="img/photo/footer-bg.png" alt="">
+    </div>
+    <div class="footer__body container">
+        <div class="cta">
+            <h2 class="cta__title">Сфокусируйтесь на главном</h2>
+            <p class="cta__subtitle">а мы позаботимся о мелочах</p>
+            <a href="#" class="btn">Получить консультацию</a>
+            <div class="cta__bottom">
+                <p>или позвоните</p>
+                <a href="#" class="phone">
+                    <img src="img/icons/phone-dark.svg" alt="">
+                    +38(067)619 39 18
+                </a>
+            </div>
+        </div>
+
+        <div class="footer__content">
+            <div class="footer__row-1">
+                <div class="footer__logo">
+                    <a href="#">
+                        <img src="img/logo/logo.svg" alt="">
+                    </a>
+                </div>
+                <ul class="social">
+                    <li>
+                        <a href="#">
+                            <img src="img/icons/facebook.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/icons/messenger.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/icons/instagram.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__row-2">
+                <div class="col">
+                    <ul class="footer__list">
+                        <li>
+                            ООО «ВЕХА ИНЖИНИРИНГ»
+                        </li>
+                        <li>
+                            ФОП Плахотников Д. В.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#" class="footer__link">
+                                Управление проектами
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Технический надзор</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Строительный аудит</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Оптимизация строительства</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="footer__list">
+                        <li>
+                            <img src="img/icons/f-phone.svg" alt="">
+                            <a href="#" class="footer__link">
+                                +38(067)619 39 45
+                            </a>
+                        </li>
+                        <li>
+                            <img src="img/icons/f-email.svg" alt="">
+                            <a href="#" class="footer__link">
+                                info@veha.ua
+                            </a>
+                        </li>
+                        <li>
+                            <img src="img/icons/f-local.svg" alt="">
+                            г.Киев, ул. Серпова, 11
+
+                        </li>
+                        
+                        <li>
+                            <a href="#">Региональные офисы</a>
+                        </li>
+                    </ul>
+
+                    <ul class="payment">
+                        <li>
+                            <img src="img/icons/visa.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="img/icons/mastercard.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="img/icons/privat.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="img/icons/likpay.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__row-3">
+                <div class="col">
+                    2021
+                    Веха. Все права защищены
+                </div>
+                <div class="col">
+                    <a href="#">Условия оказания услуг</a>
+                </div>
+                <div class="col">
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+                <div class="col">
+                    <a href="#">Предупреждение</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	<!-- == // FOOTER ================== -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+</body>
+
+</html>

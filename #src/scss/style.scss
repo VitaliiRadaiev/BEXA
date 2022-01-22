@@ -1,0 +1,469 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+// ==== FONTS ===========================================================================================
+@import "fonts";
+// ==== // FONTS ===========================================================================================
+
+// ==== VARS ===========================================================================================
+@import "vars";
+// ==== // VARS ===========================================================================================
+
+// ==== Normalize ===========================================================================================
+@import "normalize";
+// ==== // НОРМАЛАЙЗ ===========================================================================================
+
+//<MIXINE>===============================================================================================
+@import "mixins.scss";
+//</MIXINE>===============================================================================================
+
+//<ICOMOON>===============================================================================================
+@import "../icomoon/style";
+//</ICOMOON>===============================================================================================
+
+//<FANCYBOX>===============================================================================================
+@import "plagins/fancybox.scss";
+//<FANCYBOX>===============================================================================================
+
+// ==== PLAGINS ===========================================================================================
+@import "plagins/swiper-bundle";
+//@import "plagins/drift-basic";
+// ==== // PLAGINS ===========================================================================================
+
+// ==== FORM STYLE DEFAULT ===========================================================================================
+@import "forms";
+// ==== FORM STYLE DEFAULT ===========================================================================================
+
+// ==== BORDER ===========================================================================================
+@import "../common/burger/burger";
+// ==== BORDER ===========================================================================================
+
+// ==== POPUP ===========================================================================================
+//@import "common/popup/popup";
+// ==== // POPUP ===========================================================================================
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+html,
+body {
+	min-width: $minwidth;
+	margin: 0 auto;
+}
+body {
+	line-height: 1;
+	font-family: $mainFontFamily;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	color: $textColor;
+	font-size: 18px;
+	line-height: 1.55em;
+	transition: opacity 0.8s ease;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	min-height: 100%;
+	background-color: #fcfcfc;
+
+	@media (max-width: $md2+px) {
+		font-size: 16px;
+		line-height: 1.625em;
+	}
+
+	@media (max-width: $md3+px) {
+		font-size: 14px;
+		line-height: 1.428em;
+	}
+
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+input,
+button,
+textarea {
+	font-family: $mainFontFamily;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a {
+	color: $mainColor;
+}
+
+a:visited {
+	text-decoration: none;
+	color: rgba($mainColor, 0.7);
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 59px;
+
+	@media (max-width: $md2+px) {
+		font-size: 35px;
+		line-height: 40px;
+	}
+	@media (max-width: $md3+px) {
+		font-size: 30px;
+		line-height: 35px;
+	}
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 44px;
+
+	@media (max-width: $md3+px) {
+		font-size: 25px;
+		line-height: 30px;
+	}
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+
+	@media (max-width: $md3+px) {
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
+
+h4 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 29px;
+
+	@media (max-width: $md3+px) {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+.center {
+	text-align: center;
+}
+
+._page {
+	flex: 1 1 auto;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 40px;
+
+	@media (max-width: $md2+px) {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
+
+.ibg {
+	position: relative;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+
+.padding-wrap {
+	padding: 75px 0;
+
+	@media (max-width: $md3+px) {
+		padding: 40px 0;
+	}
+}
+
+.pt-0 {
+	padding-top: 0 !important;
+}
+
+// === title ========================================================================
+
+.suptitle {
+}
+.subtitle {
+}
+
+// === and title ========================================================================
+
+// === btn ========================================================================
+button,
+.btn,
+a.btn {
+
+	&:not(.fancybox-button) {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 12px 25px;
+		background-color: $mainColor;
+		color: #fff;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		min-width: 370px;
+		min-height: 60px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		text-decoration: none;
+	
+		@media (min-width: 992px) {
+			&:hover {
+				background-color: $hover;
+			}
+		}
+	
+		@media (max-width: $md3+px) {
+			min-width: 345px;
+			min-height: 51px;
+			font-size: 18px;
+			line-height: 22px;
+		}
+	
+		@media (max-width: $md4+px) {
+			width: 100%;
+		}
+	
+		@media (max-width: 374.98px) {
+			min-width: 270px;
+		}
+	}
+
+}
+// === and btn ========================================================================
+
+.input {
+}
+
+.textarea {
+}
+
+a.phone {
+	display: inline-flex;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	transition: all 0.3s ease;
+	text-decoration: none;
+	color: $textColor;
+	& img {
+		flex: 0 0 auto;
+		width: 24px;
+		height: auto;
+		margin-right: 8px;
+	}
+
+	@media (min-width: 992px) {
+		&:hover {
+			color: $mainColor;
+		}
+	}
+
+	@media (max-width: $md3+px) {
+		font-size: 16px;
+		line-height: 20px;
+
+		& img {
+			width: 15px;
+			margin-right: 6px;
+		}
+	}
+}
+
+.pagination {
+	display: flex;
+	align-items: center;
+	padding-left: 92px;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		content: "";
+		top: 49%;
+		left: 0;
+		transform: translateY(-50%);
+		height: 1px;
+		width: 80px;
+		background-color: $textColor;
+	}
+
+	& .swiper-pagination-bullet {
+		width: auto;
+		height: auto;
+		margin: 0 8px;
+		opacity: 1;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #2c3e4c;
+		background-color: transparent;
+		border-radius: 0;
+
+		&.swiper-pagination-bullet-active {
+			font-weight: 700;
+		}
+	}
+}
+
+// === TEXT CONTETN BLOCK ========================================================================
+.text-content {
+	& h1 {
+	}
+	& h2 {
+	}
+	& h3 {
+	}
+	& h4 {
+	}
+
+	& h5 {
+	}
+	& h6 {
+	}
+
+	& p {
+	}
+
+	& ul {
+		margin-bottom: 1em;
+		& > li {
+			position: relative;
+			padding-left: 2.5em;
+
+			&:before {
+				position: absolute;
+				content: "";
+				top: 0.35em;
+				left: 0;
+				width: 1.111em;
+				height: 0.83em;
+				background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAyMCAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5Ljc1NzMgMC4yNzYwMDVDMTkuOTE4NyAwLjQ0NjMxNSAyMC4wMDU5IDAuNjczNzgzIDE5Ljk5OTcgMC45MDgzOEMxOS45OTM0IDEuMTQyOTggMTkuODk0MyAxLjM2NTQ5IDE5LjcyNCAxLjUyNjk3TDYuMjcyNzIgMTQuMjcwM0M2LjE4NzkxIDE0LjM1MDcgNi4wODggMTQuNDEzNiA1Ljk3ODc2IDE0LjQ1NTJDNS44Njk1MyAxNC40OTY4IDUuNzUzMTMgMTQuNTE2NCA1LjYzNjI5IDE0LjUxMjhDNS41MTk0NSAxNC41MDkxIDUuNDA0NDggMTQuNDgyNCA1LjI5ODAzIDE0LjQzNDFDNS4xOTE1OCAxNC4zODU4IDUuMDk1NzYgMTQuMzE2OSA1LjAxNjA5IDE0LjIzMTNMMC4yMzczNDYgOS4wOTg2MkMwLjA3NzM3MTcgOC45MjY4MiAtMC4wMDc4MDE3NiA4LjY5ODUxIDAuMDAwNTYyNjY0IDguNDYzOUMwLjAwNDcwNDMgOC4zNDc3NCAwLjAzMTY4NTMgOC4yMzM1MyAwLjA3OTk2NTQgOC4xMjc3OUMwLjEyODI0NiA4LjAyMjA2IDAuMTk2ODc5IDcuOTI2ODcgMC4yODE5NDcgNy44NDc2NkMwLjM2NzAxNiA3Ljc2ODQ1IDAuNDY2ODUzIDcuNzA2NzcgMC41NzU3NTkgNy42NjYxNEMwLjY4NDY2NCA3LjYyNTUxIDAuODAwNTA2IDcuNjA2NzMgMC45MTY2NjkgNy42MTA4N0MxLjE1MTI3IDcuNjE5MjQgMS4zNzI5NCA3LjcyMDQ1IDEuNTMyOTIgNy44OTIyNkw1LjcwMjgxIDEyLjM3MTVMMTguNTA2MyAwLjI0MjczMUMxOC42NzY2IDAuMDgxMjcyMyAxOC45MDQxIC0wLjAwNTkyNjcyIDE5LjEzODcgMC4wMDAzMTMyNTNDMTkuMzczMyAwLjAwNjU1MzIyIDE5LjU5NTggMC4xMDU3MjEgMTkuNzU3MyAwLjI3NjAwNVoiIGZpbGw9IiM2QzhBQTAiLz4KPC9zdmc+Cg==");
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+
+			&:not(:last-child) {
+				margin-bottom: 1.3333em;
+			}
+		}
+	}
+
+	& ol {
+	}
+
+	& figure {
+	}
+}
+// === and TEXT CONTETN BLOCK ========================================================================
+
+// ==== BLOCKS =====================================================
+@import "../common/header/header";
+@import "../common/footer/footer";
+@import "../common/checkbox/checkbox";
+@import "../common/promo-header/promo-header";
+@import "../common/text-block/text-block";
+@import "../common/list/list";
+@import "../common/objects/objects";
+@import "../common/list-block/list-block";
+@import "../common/testimonials/testimonials";
+// ==== BLOCKS =====================================================
+
+// ==== PAGES =====================================================
+
+// ==== HOME =====================================================
+@import "pages/home";
+// ==== AND HOME =====================================================
+
+// ==== AND PAGES =====================================================

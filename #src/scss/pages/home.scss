@@ -1,0 +1,104 @@
+.advantages {
+    &__body {
+        margin: 0 -15px;
+
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &__col {
+        padding: 0 15px;
+        flex: 0 1 50%;
+
+        &:nth-child(1) {
+            @media (max-width: $md3+px) {
+                margin-bottom: 20px;
+            }
+
+            & .advantages-card__text {
+                &.text-content {
+                    & ul > li {
+                        &:before {
+                            top: 0.15em;
+                            height: 1.111em;
+                            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSIxOSIgaGVpZ2h0PSIxOSIgc3Ryb2tlPSIjRDREQURFIi8+Cjwvc3ZnPgo=");
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-child(2) {
+            & .advantages__text {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            & .advantages-card__title {
+                color: $mainColor;
+            }
+
+            & .advantages-card__text {
+                background-color: $mainColor;
+                color: #fff;
+
+                &.text-content {
+                    & ul > li {
+                        &:before {
+                            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAyMCAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5Ljc1NzMgMC4yNzYwMDVDMTkuOTE4NyAwLjQ0NjMxNSAyMC4wMDU5IDAuNjczNzgzIDE5Ljk5OTcgMC45MDgzOEMxOS45OTM0IDEuMTQyOTggMTkuODk0MyAxLjM2NTQ5IDE5LjcyNCAxLjUyNjk3TDYuMjcyNzIgMTQuMjcwM0M2LjE4NzkxIDE0LjM1MDcgNi4wODggMTQuNDEzNiA1Ljk3ODc2IDE0LjQ1NTJDNS44Njk1MyAxNC40OTY4IDUuNzUzMTMgMTQuNTE2NCA1LjYzNjI5IDE0LjUxMjhDNS41MTk0NSAxNC41MDkxIDUuNDA0NDggMTQuNDgyNCA1LjI5ODAzIDE0LjQzNDFDNS4xOTE1OCAxNC4zODU4IDUuMDk1NzYgMTQuMzE2OSA1LjAxNjA5IDE0LjIzMTNMMC4yMzczNDYgOS4wOTg2MkMwLjA3NzM3MTcgOC45MjY4MiAtMC4wMDc4MDE3NiA4LjY5ODUxIDAuMDAwNTYyNjY0IDguNDYzOUMwLjAwNDcwNDMgOC4zNDc3NCAwLjAzMTY4NTMgOC4yMzM1MyAwLjA3OTk2NTQgOC4xMjc3OUMwLjEyODI0NiA4LjAyMjA2IDAuMTk2ODc5IDcuOTI2ODcgMC4yODE5NDcgNy44NDc2NkMwLjM2NzAxNiA3Ljc2ODQ1IDAuNDY2ODUzIDcuNzA2NzcgMC41NzU3NTkgNy42NjYxNEMwLjY4NDY2NCA3LjYyNTUxIDAuODAwNTA2IDcuNjA2NzMgMC45MTY2NjkgNy42MTA4N0MxLjE1MTI3IDcuNjE5MjQgMS4zNzI5NCA3LjcyMDQ1IDEuNTMyOTIgNy44OTIyNkw1LjcwMjgxIDEyLjM3MTVMMTguNTA2MyAwLjI0MjczMUMxOC42NzY2IDAuMDgxMjcyMyAxOC45MDQxIC0wLjAwNTkyNjcyIDE5LjEzODcgMC4wMDAzMTMyNTNDMTkuMzczMyAwLjAwNjU1MzIyIDE5LjU5NTggMC4xMDU3MjEgMTkuNzU3MyAwLjI3NjAwNVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=");
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 50px;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 28px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 50px;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 28px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+}
+
+.advantages-card {
+    
+    &__title {
+        color: #d4dade;
+        margin-bottom: 30px;
+    }
+
+    &__img {
+        height: 0;
+        padding-bottom: 64.91%;
+
+        @media (max-width: $md3+px) {
+            margin: 0 -16px;
+        }
+    }
+
+    &__text {
+        padding: 72px 25px 50px;
+
+        @media (max-width: $md3+px) {
+            padding: 30px 16px 30px;
+            margin: 0 -16px;
+        }
+
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

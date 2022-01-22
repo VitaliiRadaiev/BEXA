@@ -1,0 +1,83 @@
+.text-block {
+    &__top {
+        background-color: $bgColor;     
+    }
+    &__body {
+        position: relative;
+        display: flex;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 46vw;
+
+        @media (max-width: $md2+px) {
+            width: 50vw;
+        }
+
+        @media (max-width: $md3+px) {
+            width: calc(100% + 32px);
+            right: -16px;
+        }
+    }
+
+    &__col-1 {
+        flex: 0 0 40.17%;
+        position: relative;
+
+        @media (max-width: $md2+px) {
+            flex: 0 0 50%;
+        }
+
+        @media (max-width: $md3+px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+    }
+
+    &__col-2 {
+        flex: 1 1 auto;
+        min-height: 300px;
+        padding: 150px 0 90px 130px;
+        max-width: 600px;
+
+        @media (max-width: $md2+px) {
+            padding: 45px 0px 45px 30px;
+            max-width: 450px;
+        }
+
+        @media (max-width: $md3+px) {
+            position: relative;
+            z-index: 2;
+            padding: 40px 0 45px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        margin-bottom: 80px;
+
+        @media (max-width: $md2+px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__bottom {
+        background: #fcfcfc;
+        padding-top: 50px;
+
+        @media (max-width: $md3+px) {
+            padding-top: 20px;
+        }
+    }
+}
