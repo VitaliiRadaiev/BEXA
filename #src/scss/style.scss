@@ -141,6 +141,9 @@ a:visited {
 a:hover {
 	text-decoration: none;
 }
+strong {
+	font-weight: 600;
+}
 ul li {
 	list-style: none;
 }
@@ -297,6 +300,14 @@ a.btn {
 		font-size: 20px;
 		line-height: 24px;
 		text-decoration: none;
+
+		& img {
+			flex: 0 0 auto;
+
+			&:last-child {
+				margin-left: 16px;
+			}
+		}
 	
 		@media (min-width: 992px) {
 			&:hover {
@@ -322,7 +333,9 @@ a.btn {
 
 }
 // === and btn ========================================================================
-
+.grey-bg {
+	background-color: $bgColor;
+}
 .input {
 }
 
@@ -403,6 +416,7 @@ a.phone {
 	& h2 {
 	}
 	& h3 {
+		margin-bottom: 1em;
 	}
 	& h4 {
 	}
@@ -413,6 +427,7 @@ a.phone {
 	}
 
 	& p {
+	
 	}
 
 	& ul {
@@ -458,12 +473,15 @@ a.phone {
 @import "../common/objects/objects";
 @import "../common/list-block/list-block";
 @import "../common/testimonials/testimonials";
+@import "../common/breadcrumbs/breadcrumbs";
+@import "../common/partners/partners";
 // ==== BLOCKS =====================================================
 
 // ==== PAGES =====================================================
 
 // ==== HOME =====================================================
 @import "pages/home";
+@import "pages/about";
 // ==== AND HOME =====================================================
 
 // ==== AND PAGES =====================================================

@@ -31,6 +31,7 @@ window.addEventListener('load', function () {
 	@@include('../common/promo-header/promo-header.js');
 	@@include('../common/objects/objects.js');
 	@@include('../common/testimonials/testimonials.js');
+	@@include('../common/partners/partners.js');
 
 
 	let advantagesTitles = document.querySelectorAll('.advantages__title, .advantages__text');
