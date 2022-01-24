@@ -12,12 +12,12 @@
         & .swiper-wrapper {
             @media (min-width: 768px) {
                 flex-wrap: wrap;
-                margin-bottom: -50px;
+                margin-bottom: -70px;
 
                 & .swiper-slide {
                     width: auto;
                     height: 100px;
-                    margin-bottom: 50px;
+                    margin-bottom: 70px;
                     flex: 0 1 25%;
                 }
             }

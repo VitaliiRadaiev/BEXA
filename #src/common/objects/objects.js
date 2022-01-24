@@ -8,10 +8,11 @@ if(objectsBlock) {
         pagination: {
         	el: objectsBlock.querySelector('.pagination'),
         	clickable: true,
+            dynamicBullets: true,
             renderBullet: function(index, className) {
                 let num;
                 if((index + 1) >= 10) {
-                    num = index + '.';
+                    num = index + 1;
                 } else {
                     num = '0' + (index + 1); 
                 }

@@ -6,6 +6,7 @@ if (testimonials) {
         pagination: {
             el: testimonials.querySelector('.pagination'),
             clickable: true,
+            dynamicBullets: true,
             renderBullet: function (index, className) {
                 let num;
                 if ((index + 1) >= 10) {

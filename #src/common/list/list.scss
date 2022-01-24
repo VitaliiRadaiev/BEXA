@@ -17,21 +17,10 @@
         h2 {
             color: #d4dade;
             margin-bottom: 8px;
+            transition: all .3s ease;
         }
 
 
-
-
-
-        &:first-child {
-            & h2 {
-                color: $mainColor;
-            }
-
-            & .list__item::before {
-                background-color: $mainColor;
-            }
-        }
 
         @media (max-width: $md2+px) {
             h2 {
@@ -58,10 +47,13 @@
         }
     }
 
-    &__item {
+    & .list__item {
         min-height: 108px;
         position: relative;
         padding-left: 70px;
+        display: block;
+        text-decoration: none;
+        color: $textColor;
 
         & > *:last-child {
             margin-bottom: 0;
@@ -75,7 +67,10 @@
             width: 20px;
             height: 100px;
             background-color: #d4dade;
+            transition: all .3s ease;
         }
+        
+
 
         @media (max-width: $md2+px) {
             padding-left: 55px;
@@ -96,6 +91,22 @@
                 width: 8px;
                 height: 56px;
                 left: 0;
+            }
+        }
+    }
+
+    & a.list__item {
+        display: block;
+
+        @media (min-width: 992px) {
+            &:hover {
+                &:before {
+                    background-color: $mainColor;
+                }
+
+                & h2 {
+                    color: $mainColor;
+                }
             }
         }
     }

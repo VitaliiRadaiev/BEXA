@@ -1,6 +1,6 @@
 .header {
     transition: all 0.4s ease;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -568,6 +568,19 @@
         flex-wrap: wrap;
         animation: k-subMenu 0.4s ease forwards;
         gap: 20px;
+        overflow-y: auto;
+        max-height: calc(100vh - 110px);
+
+        &::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $mainColor;
+        }
+        &::-webkit-scrollbar-track {
+            background: #C4C4C4;
+        }
 
         & > li {
             flex: 0 1 calc((100% / 3) - 20px);

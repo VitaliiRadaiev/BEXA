@@ -379,6 +379,7 @@ a.phone {
 	align-items: center;
 	padding-left: 92px;
 	position: relative;
+	width: 100% !important;
 
 	&:before {
 		position: absolute;
@@ -402,10 +403,32 @@ a.phone {
 		color: #2c3e4c;
 		background-color: transparent;
 		border-radius: 0;
+		display: none;
+		left: 0 !important;
+		transform: none;
 
 		&.swiper-pagination-bullet-active {
 			font-weight: 700;
+			display: block;
+
 		}
+
+		&.swiper-pagination-bullet-active-next {
+			display: block;
+		}
+
+		&.swiper-pagination-bullet-active-next-next {
+			display: block;
+		}
+
+		&.swiper-pagination-bullet-active-prev {
+			display: block;
+
+			& ~ .swiper-pagination-bullet.swiper-pagination-bullet-active-next-next {
+				display: none;
+			}
+		}
+
 	}
 }
 
