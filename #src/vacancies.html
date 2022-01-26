@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    @@include('common/header/_header.html',{
+        "dark": "",
+        "dark-desk": "dark-desk" 
+    })
+    <!-- == // TOP LINE ================== -->
+
+
+    <main class="_page vacancies-page">
+
+        <section class="vacancies-hero _padding-top">
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>Вакансии</li>
+                </ul>
+            </div>
+            <div class="vacancies-hero__bg-wrap">
+                <div class="vacancies-hero__bg ibg">
+                    <picture>
+                        <source srcset="img/photo/vacancies-hero-bg.jpg" media="(min-width: 576px)">
+                        <img src="img/photo/vacancies-hero-bg-mob.jpg" alt="img">
+                    </picture>
+                </div>
+                <div class="vacancies-hero__logo">
+                    <img class="img-svg" src="img/logo/logo.svg" alt="">
+                </div>
+
+                <div class="vacancies-hero__body container">
+                    <div class="vacancies-hero__box">
+                        <h1 class="vacancies-hero__title">
+                            Добро пожаловать в компанию <span>Веха</span>
+                        </h1>
+                        <div class="vacancies-hero__text text-content">
+                            <p>
+                                <strong>
+                                    Веха – это служба Заказчика для контроля строителей.
+                                </strong>
+                            </p>
+                            <p>
+                                Мы помогаем частным и корпоративным Заказчикам в срок построить объекты, получить от подрядчиков лучшее качество работ и при этом не переплатить. Основные направления деятельности – технический надзор, сопровождение строительства и проверка (аудит) строительных работ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="padding-wrap pt-0">
+            <section class="objects">
+                <div class="container">
+                    <div class="objects__body">
+                        <div class="objects__col-1">
+                            <h2 class="objects__title">Наши объекты</h2>
+
+                            <div class="pagination"></div>
+
+                            <div class="slider-buttons">
+                                <div class="slider-button prev">
+                                    <img src="img/icons/slider-arrow-left.svg" alt="">
+                                </div>
+                                <div class="slider-button next">
+                                    <img src="img/icons/slider-arrow-right.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="objects__slider-mob-wrap"></div>
+                        </div>
+                        <div class="objects__col-2">
+                            <div class="objects__slider swiper-container" data-da="objects__slider-mob-wrap,0,767,98">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="objects__slider-item">
+                                            <div class="objects__slider-img ibg">
+                                                <img src="img/photo/slider-img-1.jpg" alt="">
+                                            </div>
+                                            <div class="objects__slider-text">
+                                                <p>
+                                                    Учебный центр <br>
+                                                    <strong>3 000 м2</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="objects__slider-item">
+                                            <div class="objects__slider-img ibg">
+                                                <img src="img/photo/slider-img-2.jpg" alt="">
+                                            </div>
+                                            <div class="objects__slider-text">
+                                                <p>
+                                                    Гостинично-офисный комплекс, <strong>3 000 м2</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="objects__slider-item">
+                                            <div class="objects__slider-img ibg">
+                                                <img src="img/photo/slider-img-3.jpg" alt="">
+                                            </div>
+                                            <div class="objects__slider-text">
+                                                <p>
+                                                    Домовладение <br>
+                                                    <strong>700 м2</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="objects__slider-item">
+                                            <div class="objects__slider-img ibg">
+                                                <img src="img/photo/slider-img-1.jpg" alt="">
+                                            </div>
+                                            <div class="objects__slider-text">
+                                                <p>
+                                                    Гостиница Amarant Urban, г.Киев
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="objects__slider-item">
+                                            <div class="objects__slider-img ibg">
+                                                <img src="img/photo/slider-img-2.jpg" alt="">
+                                            </div>
+                                            <div class="objects__slider-text">
+                                                <p>
+                                                    Учебный центр, <br>
+                                                    г.Козин
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="objects__slider-item">
+                                            <div class="objects__slider-img ibg">
+                                                <img src="img/photo/slider-img-3.jpg" alt="">
+                                            </div>
+                                            <div class="objects__slider-text">
+                                                <p>
+                                                    Художественный музей
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="objects__slider-item">
+                                            <div class="objects__slider-img ibg">
+                                                <img src="img/photo/slider-img-1.jpg" alt="">
+                                            </div>
+                                            <div class="objects__slider-text">
+                                                <p>
+                                                    Гостиница Amarant Urban, г.Киев
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="objects__slider-item">
+                                            <div class="objects__slider-img ibg">
+                                                <img src="img/photo/slider-img-2.jpg" alt="">
+                                            </div>
+                                            <div class="objects__slider-text">
+                                                <p>
+                                                    Учебный центр, <br>
+                                                    г.Козин
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="objects__slider-item">
+                                            <div class="objects__slider-img ibg">
+                                                <img src="img/photo/slider-img-3.jpg" alt="">
+                                            </div>
+                                            <div class="objects__slider-text">
+                                                <p>
+                                                    Художественный музей
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="objects__slider-item">
+                                            <div class="objects__slider-img ibg">
+                                                <img src="img/photo/slider-img-1.jpg" alt="">
+                                            </div>
+                                            <div class="objects__slider-text">
+                                                <p>
+                                                    Гостиница Amarant Urban, г.Киев
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="objects__slider-item">
+                                            <div class="objects__slider-img ibg">
+                                                <img src="img/photo/slider-img-2.jpg" alt="">
+                                            </div>
+                                            <div class="objects__slider-text">
+                                                <p>
+                                                    Учебный центр, <br>
+                                                    г.Козин
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="objects__slider-item">
+                                            <div class="objects__slider-img ibg">
+                                                <img src="img/photo/slider-img-3.jpg" alt="">
+                                            </div>
+                                            <div class="objects__slider-text">
+                                                <p>
+                                                    Художественный музей
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="list-block two-columns padding-wrap">
+			<div class="container">
+				<h2 class="list-block__title center">Мы предлагаем</h2>
+				<ul class="list-block__list ">
+					<li>
+						<div class="list-block__icon">
+							<img src="img/icons/list-icon-7.svg" alt="">
+						</div>
+						<h3 class="list-block__title-item">
+                            Баланс работы и жизни
+                        </h3>
+						<div class="list-block__text-item text-content">
+							Большинство сотрудников имеют свободный график работы и самостоятельно планируют загрузку. Такой подход меняет привычное восприятие работы и стиль жизни в лучшую сторону.
+						</div>
+					</li>
+					<li>
+						<div class="list-block__icon">
+							<img src="img/icons/list-icon-8.svg" alt="">
+						</div>
+						<h3 class="list-block__title-item">
+                            Профессиональное развитие
+                        </h3>
+						<div class="list-block__text-item text-content">
+							Каждый специалист имеет уникальный набор сильных компетенций. Общение и работа плечо к плечу с коллегами усилит Ваши профессиональные навыки и поднимет их на новый уровень. Для этого мы отбираем сильную команду.
+						</div>
+					</li>
+					<li>
+						<div class="list-block__icon">
+							<img src="img/icons/list-icon-9.svg" alt="">
+						</div>
+						<h3 class="list-block__title-item">
+                            Позитивный настрой
+                        </h3>
+						<div class="list-block__text-item text-content">
+							В команде нет «токсичных» сотрудников. Они не проходят конкурс. Среди позитивных людей Вам будет комфортно.
+						</div>
+					</li>
+					<li>
+						<div class="list-block__icon">
+							<img src="img/icons/list-icon-10.svg" alt="">
+						</div>
+						<h3 class="list-block__title-item">
+                            Заработок без ограничений
+                        </h3>
+						<div class="list-block__text-item text-content">
+							Выполняйте обязательства и зарабатывайте столько, сколько позволит Ваш потенциал. Этому способствует сдельная оплата труда и бонусы за отличную работу.
+						</div>
+					</li>
+					<li>
+						<div class="list-block__icon">
+							<img src="img/icons/list-icon-11.svg" alt="">
+						</div>
+						<h3 class="list-block__title-item">
+                            Карьерный рост
+                        </h3>
+						<div class="list-block__text-item text-content">
+							Потенциал Компании позволяет развиваться Вам как в вертикальном, так и в горизонтальном направлениях. Мы приветствуем амбиции.
+						</div>
+					</li>
+					<li>
+						<div class="list-block__icon">
+							<img src="img/icons/list-icon-12.svg" alt="">
+						</div>
+						<h3 class="list-block__title-item">
+                            Интересные объекты
+                        </h3>
+						<div class="list-block__text-item text-content">
+							По статистике, инженер технадзора за год «видит» в 10 раз больше объектов, чем подрядчик. Это расширяет кругозор и быстрее накапливает опыт.
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+        <section class="open-vacancies padding-wrap">
+            <div class="open-vacancies__body container">
+                <h2 class="open-vacancies__title">
+                    Открытые вакансии
+                </h2>
+                <ul class="open-vacancies__list list">
+                    <li>
+                        <a href="#" class="list__item">
+                            <div class="flex-group">
+                                <div class="left">
+                                    <strong>
+                                        Инженер технического надзора за строительством
+                                    </strong>
+                                    г. Киев
+                                </div>
+                                <div class="right">
+                                    <img src="img/icons/wallet.svg" alt="">
+                                    24 000+
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="list__item">
+                            <div class="flex-group">
+                                <div class="left">
+                                    <strong>
+                                        Менеджер проекта (менеджер строительного объекта)
+                                    </strong>
+                                    г. Киев
+                                </div>
+                                <div class="right">
+                                    <img src="img/icons/wallet.svg" alt="">
+                                    28 000+
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="list__item">
+                            <div class="flex-group">
+                                <div class="left">
+                                    <strong>
+                                        Инженер-сметчик
+                                    </strong>
+                                    Украина
+                                </div>
+                                <div class="right">
+                                    <img src="img/icons/wallet.svg" alt="">
+                                    Договорная
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    <footer class="footer without-cta">
+        <div class="footer__bg ibg">
+            <img src="img/photo/footer-bg.png" alt="">
+        </div>
+        <div class="footer__body container">
+
+    
+            <div class="footer__content">
+                <div class="footer__row-1">
+                    <div class="footer__logo">
+                        <a href="#">
+                            <img src="img/logo/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <ul class="social">
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/messenger.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/instagram.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__row-2">
+                    <div class="col">
+                        <ul class="footer__list">
+                            <li>
+                                ООО «ВЕХА ИНЖИНИРИНГ»
+                            </li>
+                            <li>
+                                ФОП Плахотников Д. В.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="footer__list">
+                            <li>
+                                <a href="#" class="footer__link">
+                                    Управление проектами
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Технический надзор</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Строительный аудит</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Оптимизация строительства</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="footer__list">
+                            <li>
+                                <img src="img/icons/f-phone.svg" alt="">
+                                <a href="#" class="footer__link">
+                                    +38(067)619 39 45
+                                </a>
+                            </li>
+                            <li>
+                                <img src="img/icons/f-email.svg" alt="">
+                                <a href="#" class="footer__link">
+                                    info@veha.ua
+                                </a>
+                            </li>
+                            <li>
+                                <img src="img/icons/f-local.svg" alt="">
+                                г.Киев, ул. Серпова, 11
+    
+                            </li>
+                            
+                            <li>
+                                <a href="#">Региональные офисы</a>
+                            </li>
+                        </ul>
+    
+                        <ul class="payment">
+                            <li>
+                                <img src="img/icons/visa.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/icons/mastercard.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/icons/privat.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/icons/likpay.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__row-3">
+                    <div class="col">
+                        2021
+                        Веха. Все права защищены
+                    </div>
+                    <div class="col">
+                        <a href="#">Условия оказания услуг</a>
+                    </div>
+                    <div class="col">
+                        <a href="#">Политика конфиденциальности</a>
+                    </div>
+                    <div class="col">
+                        <a href="#">Предупреждение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- == // FOOTER ================== -->
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>

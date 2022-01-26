@@ -185,6 +185,10 @@ h1 {
 		font-size: 30px;
 		line-height: 35px;
 	}
+
+	& span {
+		color: $mainColor;
+	}
 }
 
 h2 {
@@ -527,5 +531,6 @@ a.phone {
 @import "pages/home";
 @import "pages/about";
 @import "pages/equipments";
+@import "pages/vacancies";
 
 // ==== AND PAGES =====================================================

@@ -1,5 +1,29 @@
 .list-block {
 
+    &.two-columns {
+        & .list-block__list {
+            text-align: left !important;
+            & > li {
+                flex: 0 1 50%;
+            }
+
+            @media (max-width: $md3+px) {
+                margin-bottom: -30px;
+                
+                & > li {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        @media (min-width: 768px) {
+            & .list-block__icon {
+                height: 70px;
+            }
+    
+        }
+    }
+
     &__title {
         margin-bottom: 50px;
     }
