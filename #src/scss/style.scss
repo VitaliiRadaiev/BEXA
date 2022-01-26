@@ -220,7 +220,7 @@ h4 {
 	}
 }
 
-p {
+p, ul, ol {
 	margin-bottom: 1em;
 }
 
@@ -432,6 +432,28 @@ a.phone {
 	}
 }
 
+.text {
+	& > *:last-child {
+		margin-bottom: 0;
+	}
+
+	& h3 {
+		margin-bottom: 1em;
+	}
+
+	& ul {
+		& li {
+			&:before {
+				content: '– ';
+			}
+
+			&:not(:last-child) {
+				margin-bottom: 0.4444em;
+			}
+		}
+	}
+}
+
 // === TEXT CONTETN BLOCK ========================================================================
 .text-content {
 	& h1 {
@@ -502,9 +524,8 @@ a.phone {
 
 // ==== PAGES =====================================================
 
-// ==== HOME =====================================================
 @import "pages/home";
 @import "pages/about";
-// ==== AND HOME =====================================================
+@import "pages/equipments";
 
 // ==== AND PAGES =====================================================
