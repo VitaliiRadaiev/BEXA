@@ -45,7 +45,7 @@
 // ==== BORDER ===========================================================================================
 
 // ==== POPUP ===========================================================================================
-//@import "common/popup/popup";
+@import "../common/popup/popup";
 // ==== // POPUP ===========================================================================================
 
 * {
@@ -341,6 +341,35 @@ a.btn {
 	background-color: $bgColor;
 }
 .input {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	min-height: 60px;
+	padding: 12px 25px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.2em;
+	background-color: rgba(#fff, 0.25);
+	transition: all .3s ease;
+	border: 1px solid transparent;
+
+	&::placeholder {
+		color: #fff;
+		font-size: 18px;
+	}
+
+	&:focus {
+		border: 1px solid #fff;
+	}
+
+	@media (max-width: $md3+px) {
+		min-height: 50px;
+		font-size: 14px;
+
+		&::placeholder {
+			font-size: 14px;
+		}
+	}
 }
 
 .textarea {
@@ -481,6 +510,13 @@ a.phone {
 
 	& ul {
 		margin-bottom: 1em;
+
+		&.list-plus {
+			& > li::before {
+				background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05IDBDOS4xOTg5MSAwIDkuMzg5NjggMC4wNzkwMTc4IDkuNTMwMzMgMC4yMTk2N0M5LjY3MDk4IDAuMzYwMzIyIDkuNzUgMC41NTEwODggOS43NSAwLjc1VjguMjVIMTcuMjVDMTcuNDQ4OSA4LjI1IDE3LjYzOTcgOC4zMjkwMiAxNy43ODAzIDguNDY5NjdDMTcuOTIxIDguNjEwMzIgMTggOC44MDEwOSAxOCA5QzE4IDkuMTk4OTEgMTcuOTIxIDkuMzg5NjggMTcuNzgwMyA5LjUzMDMzQzE3LjYzOTcgOS42NzA5OCAxNy40NDg5IDkuNzUgMTcuMjUgOS43NUg5Ljc1VjE3LjI1QzkuNzUgMTcuNDQ4OSA5LjY3MDk4IDE3LjYzOTcgOS41MzAzMyAxNy43ODAzQzkuMzg5NjggMTcuOTIxIDkuMTk4OTEgMTggOSAxOEM4LjgwMTA5IDE4IDguNjEwMzIgMTcuOTIxIDguNDY5NjcgMTcuNzgwM0M4LjMyOTAyIDE3LjYzOTcgOC4yNSAxNy40NDg5IDguMjUgMTcuMjVWOS43NUgwLjc1QzAuNTUxMDg4IDkuNzUgMC4zNjAzMjIgOS42NzA5OCAwLjIxOTY3IDkuNTMwMzNDMC4wNzkwMTc4IDkuMzg5NjggMCA5LjE5ODkxIDAgOUMwIDguODAxMDkgMC4wNzkwMTc4IDguNjEwMzIgMC4yMTk2NyA4LjQ2OTY3QzAuMzYwMzIyIDguMzI5MDIgMC41NTEwODggOC4yNSAwLjc1IDguMjVIOC4yNVYwLjc1QzguMjUgMC41NTEwODggOC4zMjkwMiAwLjM2MDMyMiA4LjQ2OTY3IDAuMjE5NjdDOC42MTAzMiAwLjA3OTAxNzggOC44MDEwOSAwIDkgMFoiIGZpbGw9IiMxNEE4RjIiLz4KPC9zdmc+Cg==");
+			}
+		}
+
 		& > li {
 			position: relative;
 			padding-left: 2.5em;
@@ -524,6 +560,7 @@ a.phone {
 @import "../common/testimonials/testimonials";
 @import "../common/breadcrumbs/breadcrumbs";
 @import "../common/partners/partners";
+@import "../common/input-file/input-file";
 // ==== BLOCKS =====================================================
 
 // ==== PAGES =====================================================
@@ -532,5 +569,6 @@ a.phone {
 @import "pages/about";
 @import "pages/equipments";
 @import "pages/vacancies";
+@import "pages/services";
 
 // ==== AND PAGES =====================================================

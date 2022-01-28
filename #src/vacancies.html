@@ -313,59 +313,64 @@
 
         <section class="open-vacancies padding-wrap">
             <div class="open-vacancies__body container">
-                <h2 class="open-vacancies__title">
-                    Открытые вакансии
-                </h2>
-                <ul class="open-vacancies__list list">
-                    <li>
-                        <a href="#" class="list__item">
-                            <div class="flex-group">
-                                <div class="left">
-                                    <strong>
-                                        Инженер технического надзора за строительством
-                                    </strong>
-                                    г. Киев
-                                </div>
-                                <div class="right">
-                                    <img src="img/icons/wallet.svg" alt="">
-                                    24 000+
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="list__item">
-                            <div class="flex-group">
-                                <div class="left">
-                                    <strong>
-                                        Менеджер проекта (менеджер строительного объекта)
-                                    </strong>
-                                    г. Киев
-                                </div>
-                                <div class="right">
-                                    <img src="img/icons/wallet.svg" alt="">
-                                    28 000+
+                <div class="open-vacancies__col-1">
+                    <h2 class="open-vacancies__title">
+                        Открытые вакансии
+                    </h2>
+                </div>
+                <div class="open-vacancies__col-2">
+                    <ul class="open-vacancies__list list">
+                        <li>
+                            <div class="list__item">
+                                <div class="flex-group">
+                                    <div class="left">
+                                        <strong>
+                                            Инженер технического надзора за строительством
+                                        </strong>
+                                        г. Киев
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/icons/wallet.svg" alt="">
+                                        24 000+
+                                    </div>
                                 </div>
                             </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="list__item">
-                            <div class="flex-group">
-                                <div class="left">
-                                    <strong>
-                                        Инженер-сметчик
-                                    </strong>
-                                    Украина
-                                </div>
-                                <div class="right">
-                                    <img src="img/icons/wallet.svg" alt="">
-                                    Договорная
+                        </li>
+                        <li>
+                            <div class="list__item">
+                                <div class="flex-group">
+                                    <div class="left">
+                                        <strong>
+                                            Менеджер проекта (менеджер строительного объекта)
+                                        </strong>
+                                        г. Киев
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/icons/wallet.svg" alt="">
+                                        28 000+
+                                    </div>
                                 </div>
                             </div>
-                        </a>
-                    </li>
-                </ul>
+                        </li>
+                        <li>
+                            <div class="list__item">
+                                <div class="flex-group">
+                                    <div class="left">
+                                        <strong>
+                                            Инженер-сметчик
+                                        </strong>
+                                        Украина
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/icons/wallet.svg" alt="">
+                                        Договорная
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#resumePopu" class="btn popup-link">Отправить резюме</a>
+                </div>
             </div>
         </section>
 
@@ -495,6 +500,8 @@
     </footer>
     <!-- == // FOOTER ================== -->
     @@include('_js-bottom.html',{})
+
+    @@include('common/popup/_popup.html',{})
 </body>
 
 </html>

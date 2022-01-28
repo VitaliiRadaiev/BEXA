@@ -27,17 +27,20 @@ window.addEventListener('load', function () {
 	// ==== AND ADD PADDING-TOP ================================
 
 	@@include('_function.js');
+	@@include('forms.js');
 	@@include('../common/header/header.js');
+	@@include('../common/popup/popup.js');
 	@@include('../common/promo-header/promo-header.js');
 	@@include('../common/objects/objects.js');
 	@@include('../common/testimonials/testimonials.js');
 	@@include('../common/partners/partners.js');
+	@@include('../common/input-file/input-file.js');
 
 
 	let advantagesTitles = document.querySelectorAll('.advantages__title, .advantages__text');
-	if(advantagesTitles.length) {
+	if (advantagesTitles.length) {
 		const setHeight = () => {
-			if(document.documentElement.clientWidth >= 768) {
+			if (document.documentElement.clientWidth >= 768) {
 				setSameHeight(advantagesTitles);
 			}
 		}
@@ -53,7 +56,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		document.body.classList.add('_is-mobile');
 	}
 
-	if(isMobile.iOS()) {
+	if (isMobile.iOS()) {
 		document.body.classList.add('_is-mobile-ios');
 	}
 
@@ -77,4 +80,5 @@ window.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 });
+
 

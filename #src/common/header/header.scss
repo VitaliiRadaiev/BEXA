@@ -559,6 +559,12 @@
             & .sub-menu {
                 display: flex;
             }
+
+            &.has-small-sub-menu {
+                & .sub-menu {
+                    display: inline-block;
+                } 
+            }
         }
     }
 
@@ -604,6 +610,10 @@
     }
 }
 
+.has-small-sub-menu {
+    position: relative;
+}
+
 .sub-menu {
     @media (min-width: 992px) {
         position: absolute;
@@ -636,6 +646,15 @@
             flex: 0 1 calc((100% / 3) - 20px);
             display: flex;
             flex-direction: column;
+        }
+
+        &.small {
+            display: none;
+            width: auto;
+            min-width: 100%;
+            max-width: 300px;
+            padding: 20px;
+            left: -20px;
         }
     }
 

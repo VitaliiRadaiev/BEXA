@@ -86,8 +86,19 @@ defer
         </div>
         <nav class="header__menu menu">
             <ul class="menu__list">
-                <li>
+                <li  class="menu-item-has-children has-small-sub-menu">
                     <a href="#" class="menu__link">Компания</a>
+                    <ul class="sub-menu small">
+                        <li>
+                            <a class="sub-menu__title-link" href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a class="sub-menu__title-link" href="#">Оборудование</a>
+                        </li>
+                        <li>
+                            <a class="sub-menu__title-link" href="#">Вакансии</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="menu-item-has-children">
                     <a href="#" class="menu__link current-menu-item">Услуги</a>
@@ -820,59 +831,64 @@ defer
 
         <section class="open-vacancies padding-wrap">
             <div class="open-vacancies__body container">
-                <h2 class="open-vacancies__title">
-                    Открытые вакансии
-                </h2>
-                <ul class="open-vacancies__list list">
-                    <li>
-                        <a href="#" class="list__item">
-                            <div class="flex-group">
-                                <div class="left">
-                                    <strong>
-                                        Инженер технического надзора за строительством
-                                    </strong>
-                                    г. Киев
-                                </div>
-                                <div class="right">
-                                    <img src="img/icons/wallet.svg" alt="">
-                                    24 000+
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="list__item">
-                            <div class="flex-group">
-                                <div class="left">
-                                    <strong>
-                                        Менеджер проекта (менеджер строительного объекта)
-                                    </strong>
-                                    г. Киев
-                                </div>
-                                <div class="right">
-                                    <img src="img/icons/wallet.svg" alt="">
-                                    28 000+
+                <div class="open-vacancies__col-1">
+                    <h2 class="open-vacancies__title">
+                        Открытые вакансии
+                    </h2>
+                </div>
+                <div class="open-vacancies__col-2">
+                    <ul class="open-vacancies__list list">
+                        <li>
+                            <div class="list__item">
+                                <div class="flex-group">
+                                    <div class="left">
+                                        <strong>
+                                            Инженер технического надзора за строительством
+                                        </strong>
+                                        г. Киев
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/icons/wallet.svg" alt="">
+                                        24 000+
+                                    </div>
                                 </div>
                             </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="list__item">
-                            <div class="flex-group">
-                                <div class="left">
-                                    <strong>
-                                        Инженер-сметчик
-                                    </strong>
-                                    Украина
-                                </div>
-                                <div class="right">
-                                    <img src="img/icons/wallet.svg" alt="">
-                                    Договорная
+                        </li>
+                        <li>
+                            <div class="list__item">
+                                <div class="flex-group">
+                                    <div class="left">
+                                        <strong>
+                                            Менеджер проекта (менеджер строительного объекта)
+                                        </strong>
+                                        г. Киев
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/icons/wallet.svg" alt="">
+                                        28 000+
+                                    </div>
                                 </div>
                             </div>
-                        </a>
-                    </li>
-                </ul>
+                        </li>
+                        <li>
+                            <div class="list__item">
+                                <div class="flex-group">
+                                    <div class="left">
+                                        <strong>
+                                            Инженер-сметчик
+                                        </strong>
+                                        Украина
+                                    </div>
+                                    <div class="right">
+                                        <img src="img/icons/wallet.svg" alt="">
+                                        Договорная
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#resumePopu" class="btn popup-link">Отправить резюме</a>
+                </div>
             </div>
         </section>
 
@@ -1003,6 +1019,51 @@ defer
     <!-- == // FOOTER ================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/jQueryScripts.min.js"></script>
+
+    <div class="popup open" id="popupSerch">
+	<div class="popup_body">
+		<div class="popup_content">
+			<div class="popup-close close-popup"><span></span></div>
+			<form action="#" class="form-resume">
+				<h2 class="form-resume__title center">Заполните, пожалуйста, анкету</h2>
+				<div class="form-resume__items">
+					<div class="form-resume__item">
+						<input class="input" type="text" placeholder="Введите Ваше имя">
+					</div>
+					<div class="form-resume__item">
+						<input class="input" type="text" placeholder="Введите Вашу Фамилию">
+					</div>
+					<div class="form-resume__item">
+						<input class="input" type="email" placeholder="Введите Вашу почту">
+					</div>
+					<div class="form-resume__item">
+						<input class="input" type="text" placeholder="Вакансия">
+					</div>
+				
+					<div class="form-resume__item">
+						<label class="file-input">
+							<input type="file" accept=".doc, .rtf, .pdf, .txt">
+							<div class="file-input__text">
+								<svg width="8" height="16" viewBox="0 0 10 16">
+									<path fill="#fff" xmlns="http://www.w3.org/2000/svg" d="M11 4v8c0 1.5-1.5 3-3 3s-3-1.5-3-3V3c0-1 1-2 2-2s2 1 2 2v8c0 .5-.5 1-1 1s-1-.5-1-1V4H6v7c0 1 1 2 2 2s2-1 2-2V3c0-1.5-1.5-3-3-3S4 1.5 4 3v9c0 2 2 4 4 4s4-2 4-4V4h-1z"/>
+								</svg>
+								Прикрепить резюму (doc,rtf,pdf,txt)
+							</div>
+						</label>
+					</div>
+					<div class="form-resume__item">
+						<input type="text" placeholder="">
+					</div>
+					<div class="form-resume__item">
+						<button>Отправить резюме</button>
+					</div>
+				</div>
+			</form>
+			
+		</div>
+	</div>
+</div>
+
 </body>
 
 </html>

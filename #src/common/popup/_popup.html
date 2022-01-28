@@ -1,17 +1,42 @@
-<div class="popup" id="popupSerch">
+<div class="popup open" id="popupSerch">
 	<div class="popup_body">
 		<div class="popup_content">
-
-			<div class="popup__form-wrap">
-				<form action="/" class="popup-search">
-					<div class="popup-search__item">
-						<input class="popup-search__input" type="text" placeholder="SEARCH HERE…">
+			<div class="popup-close close-popup"><span></span></div>
+			<form action="#" class="form-resume">
+				<h2 class="form-resume__title center">Заполните, пожалуйста, анкету</h2>
+				<div class="form-resume__items">
+					<div class="form-resume__item">
+						<input class="input" type="text" placeholder="Введите Ваше имя">
 					</div>
-					<div class="popup-search__item">
-						<button class="popup-search__submit" type="submit"><span>SUBMIT</span></button>
+					<div class="form-resume__item">
+						<input class="input" type="text" placeholder="Введите Вашу Фамилию">
 					</div>
-				</form>
-			</div>
+					<div class="form-resume__item">
+						<input class="input" type="email" placeholder="Введите Вашу почту">
+					</div>
+					<div class="form-resume__item">
+						<input class="input" type="text" placeholder="Вакансия">
+					</div>
+				
+					<div class="form-resume__item">
+						<label class="file-input">
+							<input type="file" accept=".doc, .rtf, .pdf, .txt">
+							<div class="file-input__text">
+								<svg width="8" height="16" viewBox="0 0 10 16">
+									<path fill="#fff" xmlns="http://www.w3.org/2000/svg" d="M11 4v8c0 1.5-1.5 3-3 3s-3-1.5-3-3V3c0-1 1-2 2-2s2 1 2 2v8c0 .5-.5 1-1 1s-1-.5-1-1V4H6v7c0 1 1 2 2 2s2-1 2-2V3c0-1.5-1.5-3-3-3S4 1.5 4 3v9c0 2 2 4 4 4s4-2 4-4V4h-1z"/>
+								</svg>
+								Прикрепить резюму (doc,rtf,pdf,txt)
+							</div>
+						</label>
+					</div>
+					<div class="form-resume__item">
+						<input type="text" placeholder="">
+					</div>
+					<div class="form-resume__item">
+						<button>Отправить резюме</button>
+					</div>
+				</div>
+			</form>
 			
 		</div>
 	</div>
