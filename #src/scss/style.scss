@@ -224,7 +224,9 @@ h4 {
 	}
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
 	margin-bottom: 1em;
 }
 
@@ -287,7 +289,6 @@ p, ul, ol {
 button,
 .btn,
 a.btn {
-
 	&:not(.fancybox-button) {
 		display: inline-flex;
 		align-items: center;
@@ -312,29 +313,28 @@ a.btn {
 				margin-left: 16px;
 			}
 		}
-	
+
 		@media (min-width: 992px) {
 			&:hover {
 				background-color: $hover;
 			}
 		}
-	
+
 		@media (max-width: $md3+px) {
 			min-width: 345px;
 			min-height: 51px;
 			font-size: 18px;
 			line-height: 22px;
 		}
-	
+
 		@media (max-width: $md4+px) {
 			width: 100%;
 		}
-	
+
 		@media (max-width: 374.98px) {
 			min-width: 270px;
 		}
 	}
-
 }
 // === and btn ========================================================================
 .grey-bg {
@@ -350,7 +350,7 @@ a.btn {
 	font-size: 18px;
 	line-height: 1.2em;
 	background-color: rgba(#fff, 0.25);
-	transition: all .3s ease;
+	transition: all 0.3s ease;
 	border: 1px solid transparent;
 
 	&::placeholder {
@@ -443,7 +443,6 @@ a.phone {
 		&.swiper-pagination-bullet-active {
 			font-weight: 700;
 			display: block;
-
 		}
 
 		&.swiper-pagination-bullet-active-next {
@@ -461,7 +460,6 @@ a.phone {
 				display: none;
 			}
 		}
-
 	}
 }
 
@@ -477,11 +475,56 @@ a.phone {
 	& ul {
 		& li {
 			&:before {
-				content: '– ';
+				content: "– ";
 			}
 
 			&:not(:last-child) {
 				margin-bottom: 0.4444em;
+			}
+		}
+	}
+}
+
+.checkbox {
+	display: flex;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+
+	& input {
+		position: absolute;
+		opacity: 0;
+		z-index: -1;
+
+		&:checked ~ .checkbox__square {
+			background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNiAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0IDJMNS42IDExLjZMMiA4IiBzdHJva2U9IiNGQ0ZDRkMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+Cjwvc3ZnPgo=");
+		}
+	}
+	&__square {
+		flex: 0 0 auto;
+		width: 20px;
+		height: 20px;
+		border-radius: 2px;
+		background-color: $mainColor;
+		margin-right: 12px;
+		background-size: 80%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 24px;
+
+		& a {
+			color: inherit;
+			transition: all .3s ease;
+
+			@media (min-width: 992px) {
+				&:hover {
+					color: $mainColor;
+					text-decoration: underline;
+				}
 			}
 		}
 	}
@@ -505,7 +548,6 @@ a.phone {
 	}
 
 	& p {
-	
 	}
 
 	& ul {
