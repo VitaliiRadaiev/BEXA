@@ -4863,6 +4863,10 @@ a.phone img {
   margin-right: 16px;
 }
 
+.open-vacancies .btn {
+  margin-bottom: 30px;
+}
+
 .services-work__title {
   margin: 0 auto 50px;
   max-width: 770px;
