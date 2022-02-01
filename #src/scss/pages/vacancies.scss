@@ -160,7 +160,12 @@
 
     &__list {
         display: block;
-        margin-bottom: 0;
+        margin-bottom: 100px;
+        text-align: left;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 50px;
+        }
 
         & > li {
             padding: 0;
@@ -252,5 +257,9 @@
 
     & .btn {
         margin-bottom: 30px;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 15px;
+        }
     }
 }

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    @@include('common/header/_header.html',{
+    "dark": "dark"
+    })
+    <!-- == // TOP LINE ================== -->
+
+
+    <main class="_page page404-page _padding-top">
+        <section class="page404">
+            <div class="container">
+                <div class="page404__body">
+                    <img class="decor" src="img/photo/404-decor.svg" alt="">
+                    <div class="page404__title">
+                        <div class="page404__title-bg ibg">
+                            <img src="img/photo/404-bg.jpg" alt="">
+                        </div>
+                        <svg height="100%" width="100%" class="">
+                            <!-- <text x="50%" y="50%" fill="red" text-anchor="middle">404</text> -->
+                             <defs>
+                                <mask id="mask" x="0" y="0" height="100%" width="100%">
+                                    <rect x="0" y="0" height="100%" width="100%" />
+                                    <text x="50%" y="50%" fill="red" text-anchor="middle">404</text>
+                                </mask>
+                            </defs>
+                           <rect x="0" y="0" height="100%" width="100%" />
+                        </svg>
+                    </div>
+                    <h2 class="page404__text">Страница не найдена</h2>
+                    <a href="#" class="btn">Вернуться на главную</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    <footer class="footer without-cta">
+        <div class="footer__bg ibg">
+            <img src="img/photo/footer-bg.png" alt="">
+        </div>
+        <div class="footer__body container">
+
+
+            <div class="footer__content">
+                <div class="footer__row-1">
+                    <div class="footer__logo">
+                        <a href="#">
+                            <img src="img/logo/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <ul class="social">
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/messenger.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/instagram.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__row-2">
+                    <div class="col">
+                        <ul class="footer__list">
+                            <li>
+                                ООО «ВЕХА ИНЖИНИРИНГ»
+                            </li>
+                            <li>
+                                ФОП Плахотников Д. В.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="footer__list">
+                            <li>
+                                <a href="#" class="footer__link">
+                                    Управление проектами
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Технический надзор</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Строительный аудит</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Оптимизация строительства</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="footer__list">
+                            <li>
+                                <img src="img/icons/f-phone.svg" alt="">
+                                <a href="#" class="footer__link">
+                                    +38(067)619 39 45
+                                </a>
+                            </li>
+                            <li>
+                                <img src="img/icons/f-email.svg" alt="">
+                                <a href="#" class="footer__link">
+                                    info@veha.ua
+                                </a>
+                            </li>
+                            <li>
+                                <img src="img/icons/f-local.svg" alt="">
+                                г.Киев, ул. Серпова, 11
+
+                            </li>
+
+                            <li>
+                                <a href="#">Региональные офисы</a>
+                            </li>
+                        </ul>
+
+                        <ul class="payment">
+                            <li>
+                                <img src="img/icons/visa.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/icons/mastercard.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/icons/privat.svg" alt="">
+                            </li>
+                            <li>
+                                <img src="img/icons/likpay.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__row-3">
+                    <div class="col">
+                        2021
+                        Веха. Все права защищены
+                    </div>
+                    <div class="col">
+                        <a href="#">Условия оказания услуг</a>
+                    </div>
+                    <div class="col">
+                        <a href="#">Политика конфиденциальности</a>
+                    </div>
+                    <div class="col">
+                        <a href="#">Предупреждение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- == // FOOTER ================== -->
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>

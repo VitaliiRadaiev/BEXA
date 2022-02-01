@@ -516,6 +516,10 @@ a.phone {
 		font-size: 14px;
 		line-height: 24px;
 
+		@media (max-width: $md3+px) {
+			font-size: 12px;
+		}
+
 		& a {
 			color: inherit;
 			transition: all .3s ease;
@@ -612,5 +616,7 @@ a.phone {
 @import "pages/equipments";
 @import "pages/vacancies";
 @import "pages/services";
+@import "pages/contact";
+@import "pages/page404";
 
 // ==== AND PAGES =====================================================
