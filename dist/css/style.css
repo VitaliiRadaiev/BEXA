@@ -7541,6 +7541,10 @@ a.phone img {
     padding-right: 16px;
   }
 
+  .footer.without-cta .footer__body {
+    padding-top: 50px;
+  }
+
   .footer {
     padding-top: 40px;
     padding-bottom: 20px;
@@ -7816,7 +7820,7 @@ a.phone img {
   .objects__col-1 .slider-buttons {
     position: absolute;
     top: 0;
-    right: 22px;
+    right: 5px;
   }
 
   .objects__title {
@@ -8059,6 +8063,10 @@ a.phone img {
 
   .services-item__text-wrap .btn {
     margin-top: 30px;
+  }
+
+  .equipments-page .promo-header__title {
+    margin-bottom: 50px;
   }
 
   .control-work-card__img {
@@ -8533,7 +8541,7 @@ a.phone img {
   }
 
   .objects__title {
-    max-width: 181px;
+    max-width: 200px;
     margin-left: auto;
     margin-right: auto;
   }

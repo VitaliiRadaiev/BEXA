@@ -5,6 +5,10 @@
     &.without-cta {
         & .footer__body {
             padding-top: 300px;
+
+            @media (max-width: $md3+px) {
+                padding-top: 50px;
+            }
         }
     }
 

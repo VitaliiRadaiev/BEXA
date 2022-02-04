@@ -61,7 +61,7 @@
             & .slider-buttons {
                 position: absolute;
                 top: 0;
-                right: 22px;
+                right: 5px;
             }
         }
     }
@@ -79,7 +79,7 @@
         }
 
         @media (max-width: $md4+px) {
-            max-width: 181px;
+            max-width: 200px;
             margin-left: auto;
             margin-right: auto;
         }
