@@ -2682,6 +2682,10 @@ h2 {
   line-height: 44px;
 }
 
+h2 span {
+  color: #14A8F2;
+}
+
 h3 {
   font-weight: 600;
   font-size: 24px;
@@ -3077,12 +3081,9 @@ a.phone img {
   fill: #14A8F2;
 }
 
-.header.is-scroll .header__burger svg rect {
+.header.is-scroll .header__burger svg rect,
+.header.is-scroll .header__burger svg path {
   fill: #2C3E4C;
-}
-
-.header.is-scroll .header__burger svg rect.line-2 {
-  fill: #14A8F2;
 }
 
 .header.menu-is-open {
@@ -8054,6 +8055,10 @@ a.phone img {
     padding-bottom: 81.159%;
     margin-right: 0;
     margin-bottom: 30px;
+  }
+
+  .services-item__text-wrap .btn {
+    margin-top: 30px;
   }
 
   .control-work-card__img {

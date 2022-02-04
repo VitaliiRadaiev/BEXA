@@ -150,12 +150,8 @@
             }
         }
 
-        & .header__burger svg rect {
+        & .header__burger svg rect, .header__burger svg path {
             fill: $textColor;
-
-            &.line-2 {
-                fill: $mainColor;
-            }
         }
     }
 
