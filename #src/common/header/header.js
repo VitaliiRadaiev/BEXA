@@ -65,4 +65,20 @@ if (header) {
     window.addEventListener('scroll', () => {
         header.classList.toggle('is-scroll', window.pageYOffset > 50);
     })
+
+
+    let titleLinksWrapItems =  Array.from(header.querySelectorAll('.title-link-wrap'));
+    if(titleLinksWrapItems.length) {
+        let firstItem = titleLinksWrapItems[0];
+        let otherItems = titleLinksWrapItems.slice(1);
+
+        otherItems.forEach(item => {
+            let link = item.querySelector('.sub-menu__title-link');
+            if(link) {
+                firstItem.append(link);
+                item.style.display = 'none';
+            }
+        })
+
+    }
 }

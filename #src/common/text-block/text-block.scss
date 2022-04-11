@@ -1,5 +1,16 @@
 .text-block {
 
+
+    & + .text-block {
+        margin-top: 1em;
+    }
+
+    & .container-sm {
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     &.bg-mob-top {
         & .text-block__col-2 {
             @media (min-width: 1025px) {

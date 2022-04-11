@@ -5,6 +5,8 @@ if(objectsBlock) {
         spaceBetween: 30,
         speed: 800,
         watchOverflow: true,
+        loop: true,
+        loopAdditionalSlides: 3,
         pagination: {
         	el: objectsBlock.querySelector('.pagination'),
         	clickable: true,

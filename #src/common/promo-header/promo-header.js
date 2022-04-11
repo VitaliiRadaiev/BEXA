@@ -57,3 +57,27 @@ if(promoHeader) {
 
     window.addEventListener('resize', setMinHeight);
 }
+
+
+let partnersSlider = document.querySelector('.promo-header__partners-slide');
+if(partnersSlider) {
+    let swiprePartnersSlider = new Swiper(partnersSlider, {
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        speed: 400,
+        loop: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+            },
+            480: {
+                slidesPerView: 4,
+                spaceBetween: 0,
+            },
+        },
+
+    });
+}

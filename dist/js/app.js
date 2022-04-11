@@ -549,6 +549,22 @@ if (header) {
     window.addEventListener('scroll', () => {
         header.classList.toggle('is-scroll', window.pageYOffset > 50);
     })
+
+
+    let titleLinksWrapItems =  Array.from(header.querySelectorAll('.title-link-wrap'));
+    if(titleLinksWrapItems.length) {
+        let firstItem = titleLinksWrapItems[0];
+        let otherItems = titleLinksWrapItems.slice(1);
+
+        otherItems.forEach(item => {
+            let link = item.querySelector('.sub-menu__title-link');
+            if(link) {
+                firstItem.append(link);
+                item.style.display = 'none';
+            }
+        })
+
+    }
 };
 	// ==== Popup form handler====
 
@@ -751,6 +767,30 @@ if(promoHeader) {
     setMinHeight();
 
     window.addEventListener('resize', setMinHeight);
+}
+
+
+let partnersSlider = document.querySelector('.promo-header__partners-slide');
+if(partnersSlider) {
+    let swiprePartnersSlider = new Swiper(partnersSlider, {
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        speed: 400,
+        loop: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+            },
+            480: {
+                slidesPerView: 4,
+                spaceBetween: 0,
+            },
+        },
+
+    });
 };
 	let objectsBlock = document.querySelector('.objects');
 if(objectsBlock) {
@@ -759,6 +799,8 @@ if(objectsBlock) {
         spaceBetween: 30,
         speed: 800,
         watchOverflow: true,
+        loop: true,
+        loopAdditionalSlides: 3,
         pagination: {
         	el: objectsBlock.querySelector('.pagination'),
         	clickable: true,
@@ -890,6 +932,15 @@ if(partnerSlider) {
 })()
 
 ;
+	{
+    let footer = document.querySelector('.footer');
+    if(footer) {
+        let cta = footer.querySelector('.cta');
+        if(!cta) {
+            footer.classList.add('without-cta');
+        }
+    }
+};
 
 
 	let advantagesTitles = document.querySelectorAll('.advantages__title, .advantages__text');
