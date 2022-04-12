@@ -825,7 +825,7 @@
             text-decoration: none;
 
             @media (min-width: 992px) {
-                &:hover {
+                &:hover:not(.sub-menu__title-link) {
                     color: $hover;
                 }
             }

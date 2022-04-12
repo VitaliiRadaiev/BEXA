@@ -2999,7 +2999,7 @@ a.phone img {
 }
 
 .text-content ul {
-  margin-bottom: 1em;
+  margin-bottom: 1.4em;
 }
 
 .text-content ul.list-plus > li::before {
@@ -3026,6 +3026,93 @@ a.phone img {
 
 .text-content ul > li:not(:last-child) {
   margin-bottom: 1.3333em;
+}
+
+.text-content ol {
+  margin-bottom: 1.4em;
+  padding-left: 1.7em;
+}
+
+.text-content ol > li {
+  position: relative;
+  padding-left: 0.8em;
+}
+
+.text-content ol > li:not(:last-child) {
+  margin-bottom: 1.3333em;
+}
+
+.text-content figure {
+  display: block;
+  margin: 2rem 0;
+}
+
+.text-content figure img {
+  width: 100%;
+  height: auto;
+}
+
+.text-content p ~ h1,
+.text-content p ~ h2,
+.text-content p ~ h3,
+.text-content p ~ h4,
+.text-content p ~ h5,
+.text-content p ~ h6,
+.text-content ul ~ h1,
+.text-content ul ~ h2,
+.text-content ul ~ h3,
+.text-content ul ~ h4,
+.text-content ul ~ h5,
+.text-content ul ~ h6,
+.text-content ol ~ h1,
+.text-content ol ~ h2,
+.text-content ol ~ h3,
+.text-content ol ~ h4,
+.text-content ol ~ h5,
+.text-content ol ~ h6,
+.text-content figure ~ h1,
+.text-content figure ~ h2,
+.text-content figure ~ h3,
+.text-content figure ~ h4,
+.text-content figure ~ h5,
+.text-content figure ~ h6,
+.text-content h1 ~ h1,
+.text-content h1 ~ h2,
+.text-content h1 ~ h3,
+.text-content h1 ~ h4,
+.text-content h1 ~ h5,
+.text-content h1 ~ h6,
+.text-content h2 ~ h1,
+.text-content h2 ~ h2,
+.text-content h2 ~ h3,
+.text-content h2 ~ h4,
+.text-content h2 ~ h5,
+.text-content h2 ~ h6,
+.text-content h3 ~ h1,
+.text-content h3 ~ h2,
+.text-content h3 ~ h3,
+.text-content h3 ~ h4,
+.text-content h3 ~ h5,
+.text-content h3 ~ h6,
+.text-content h4 ~ h1,
+.text-content h4 ~ h2,
+.text-content h4 ~ h3,
+.text-content h4 ~ h4,
+.text-content h4 ~ h5,
+.text-content h4 ~ h6,
+.text-content h5 ~ h1,
+.text-content h5 ~ h2,
+.text-content h5 ~ h3,
+.text-content h5 ~ h4,
+.text-content h5 ~ h5,
+.text-content h5 ~ h6,
+.text-content h6 ~ h1,
+.text-content h6 ~ h2,
+.text-content h6 ~ h3,
+.text-content h6 ~ h4,
+.text-content h6 ~ h5,
+.text-content h6 ~ h6 {
+  margin-top: 1.4em;
 }
 
 .header {
@@ -6633,7 +6720,7 @@ a.phone img {
     white-space: nowrap;
   }
 
-  .sub-menu:not(.sub-sub-menu) a:hover {
+  .sub-menu:not(.sub-sub-menu) a:hover:not(.sub-menu__title-link) {
     color: #106a97;
   }
 

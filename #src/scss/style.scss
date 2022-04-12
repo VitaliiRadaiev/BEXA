@@ -557,7 +557,7 @@ a.phone {
 	}
 
 	& ul {
-		margin-bottom: 1em;
+		margin-bottom: 1.4em;
 
 		&.list-plus {
 			& > li::before {
@@ -589,9 +589,45 @@ a.phone {
 	}
 
 	& ol {
+		margin-bottom: 1.4em;
+		padding-left: 1.7em;
+		& > li {
+			position: relative;
+			padding-left: 0.8em;
+
+			&:not(:last-child) {
+				margin-bottom: 1.3333em;
+			}
+		}
 	}
 
 	& figure {
+		display: block;
+		margin: 2rem 0;
+		& img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	& p,
+	& ul,
+	& ol,
+	& figure,
+	& h1,
+	& h2,
+	& h3,
+	& h4,
+	& h5,
+	& h6 {
+		& ~ h1,
+		& ~ h2,
+		& ~ h3,
+		& ~ h4,
+		& ~ h5,
+		& ~ h6 {
+			margin-top: 1.4em;
+		}
 	}
 }
 // === and TEXT CONTETN BLOCK ========================================================================
