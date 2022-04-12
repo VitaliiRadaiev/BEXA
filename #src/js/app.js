@@ -37,6 +37,23 @@ window.addEventListener('load', function () {
 	@@include('../common/input-file/input-file.js');
 	@@include('../common/footer/footer.js');
 
+	// input mask init
+	let items = document.querySelectorAll('[data-mask]');
+	if (items.length) {
+		items.forEach(item => {
+			let maskValue = item.dataset.mask;
+			let input = item.querySelector('input[type="text"]');
+
+			if (input) {
+				Inputmask(maskValue, {
+					//"placeholder": '',
+					clearIncomplete: true,
+					clearMaskOnLostFocus: true,
+				}).mask(input);
+			}
+		})
+	}
+
 
 	let advantagesTitles = document.querySelectorAll('.advantages__title, .advantages__text');
 	if (advantagesTitles.length) {

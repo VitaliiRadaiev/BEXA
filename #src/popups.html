@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+	<div class="_preload-body"></div>
+	<!-- == TOP LINE ================== -->
+	@@include('common/header/_header.html',{
+	"dark": ""
+	})
+	<!-- == // TOP LINE ================== -->
+
+
+	<main class="_page _padding-top">
+        <div class="padding-wrap">
+            <div class="container">
+                <div class="text-content">
+                    <ul>
+                        <li>
+                            <a href="#resumePopup" class="popup-link">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#orderPopup" class="popup-link">Order</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</main>
+
+
+	<!-- == FOOTER ================== -->
+	@@include('common/footer/_footer.html',{})
+	<!-- == // FOOTER ================== -->
+
+    @@include('common/popup/_popup.html');
+    @@include('common/popup/_order-popup.html');
+
+	@@include('_js-bottom.html',{})
+</body>
+
+</html>

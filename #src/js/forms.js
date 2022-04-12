@@ -170,20 +170,6 @@ function inputs_init(inputs) {
 		for (let index = 0; index < inputs.length; index++) {
 			const input = inputs[index];
 
-			if (input.classList.contains('_mask')) {
-				//'+7(999) 999 9999'
-				//'+38(999) 999 9999'
-				//'+375(99)999-99-99'
-				input.classList.add('_mask');
-				Inputmask('+38 (999) 999 99 99', {
-					//"placeholder": '',
-					clearIncomplete: true,
-					clearMaskOnLostFocus: true,
-					onincomplete: function () {
-						//input_clear_mask(input, input_g_value);
-					}
-				}).mask(input);
-			}
 			if (input.classList.contains('_mask-time')) {
 				Inputmask('99 : 99', {
 					//"placeholder": '',
